@@ -1,5 +1,4 @@
 import { AppPage } from './app.po';
-import { browser, logging } from 'protractor';
 
 describe('workspace-project App', () => {
   let page: AppPage;
@@ -10,9 +9,10 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('wheather app is running!');
+    expect(page.getParagraphText()).toEqual('LocalCast Weather');
   });
 
+  /*
   afterEach(async () => {
     // Assert that there are no errors emitted from the browser
     const logs = await browser.manage().logs().get(logging.Type.BROWSER);
@@ -22,4 +22,5 @@ describe('workspace-project App', () => {
       } as logging.Entry)
     );
   });
+  */
 });
