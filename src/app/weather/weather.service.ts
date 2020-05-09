@@ -13,10 +13,14 @@ interface ICurrentWeatherData {
   name: string;
 }
 
+export interface IWeatherService {
+  getCurrentWeather(city: string, country: string): Observable<ICurrentWeather>;
+}
+
 @Injectable({
   providedIn: 'root',
 })
-export class WeatherService {
+export class WeatherService implements IWeatherService {
   constructor(private httpClient: HttpClient) {}
 
   // http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=1aae65c614038794253121af70cff6da
