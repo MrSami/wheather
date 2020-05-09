@@ -17,7 +17,7 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "prettier.printWidth": 90, // Following setting requires Prettier Extension
-  "prettier.semi": false,
+  //"prettier.semi": true,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "typescriptHero.imports.insertSemicolons": false, // Following setting requires TypeScriptHero Extension

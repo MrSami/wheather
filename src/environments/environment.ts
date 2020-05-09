@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-}
+  appId: '1aae65c614038794253121af70cff6da',
+  baseUrl: 'http://',
+};
 
 /*
  * For easier debugging in development mode, you can import the following file
