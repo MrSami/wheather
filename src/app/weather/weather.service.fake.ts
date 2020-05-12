@@ -12,7 +12,10 @@ export class WeatherServiceFake implements IWeatherService {
     description: 'light intensity drizzle',
   };
 
-  public getCurrentWeather(city: string, country: string): Observable<ICurrentWeather> {
+  public getCurrentWeather(
+    city: string,
+    country: string
+  ): Observable<ICurrentWeather> {
     return of(this.fakeWeather);
   }
 }

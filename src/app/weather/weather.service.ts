@@ -24,7 +24,10 @@ export class WeatherService implements IWeatherService {
   constructor(private httpClient: HttpClient) {}
 
   // http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=1aae65c614038794253121af70cff6da
-  getCurrentWeather(city: string, country: string): Observable<ICurrentWeather> {
+  getCurrentWeather(
+    city: string,
+    country: string
+  ): Observable<ICurrentWeather> {
     return this.httpClient
       .get<ICurrentWeatherData>(
         `${environment.baseUrl}api.openweathermap.org/data/2.5/weather?` +
